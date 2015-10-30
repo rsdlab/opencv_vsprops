@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<Link>
+			<AdditionalLibraryDirectories>$(OPENCV_DIR)\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalDependencies>opencv_imgproc$(OPENCV_VER)d.lib;opencv_core$(OPENCV_VER)d.lib;opencv_highgui$(OPENCV_VER)d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(IncludePath)</AdditionalIncludeDirectories>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemGroup />
+	
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<Link>
+			<AdditionalLibraryDirectories>$(OPENCV_DIR)\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>		
+			<AdditionalDependencies>opencv_imgproc$(OPENCV_VER).lib;opencv_core$(OPENCV_VER).lib;opencv_highgui$(OPENCV_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(IncludePath)</AdditionalIncludeDirectories>
+		</ClCompile>		
+	</ItemDefinitionGroup>
+	<ItemGroup />
+</Project>
