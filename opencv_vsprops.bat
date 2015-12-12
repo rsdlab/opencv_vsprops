@@ -1,3 +1,3 @@
 SETX OPENCV_DIR "c:\opencv\build"
 SETX OPENCV_VER "249"
-SETX OPENCV_BIN "%OPENCV_DIR%\bin"
+SETX PATH "%OPENCV_DIR%\bin\Debug;%OPENCV_DIR%\bin\Release"
