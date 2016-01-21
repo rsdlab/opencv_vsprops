@@ -6,7 +6,7 @@
 			<AdditionalDependencies>opencv_imgproc$(OPENCV_VER)d.lib;opencv_core$(OPENCV_VER)d.lib;opencv_highgui$(OPENCV_VER)d.lib;opencv_calib3d$(OPENCV_VER)d.lib;opencv_contrib$(OPENCV_VER)d.lib;opencv_features2d$(OPENCV_VER)d.lib;opencv_flann$(OPENCV_VER)d.lib;opencv_nonfree$(OPENCV_VER)d.lib;opencv_objdetect$(OPENCV_VER)d.lib;opencv_ocl$(OPENCV_VER)d.lib;opencv_photo$(OPENCV_VER)d.lib;opencv_stitching$(OPENCV_VER)d.lib;opencv_superres$(OPENCV_VER)d.lib;opencv_video$(OPENCV_VER)d.lib;opencv_videostab$(OPENCV_VER)d.lib;opencv_legacy$(OPENCV_VER)d.lib;opencv_ml$(OPENCV_VER)d.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 		<ClCompile>
-			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(IncludePath)</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ClCompile>
 	</ItemDefinitionGroup>
 	<ItemGroup />
@@ -17,7 +17,7 @@
 			<AdditionalDependencies>opencv_imgproc$(OPENCV_VER).lib;opencv_core$(OPENCV_VER).lib;opencv_highgui$(OPENCV_VER).lib;opencv_calib3d$(OPENCV_VER).lib;opencv_contrib$(OPENCV_VER).lib;opencv_features2d$(OPENCV_VER).lib;opencv_flann$(OPENCV_VER).lib;opencv_nonfree$(OPENCV_VER).lib;opencv_objdetect$(OPENCV_VER).lib;opencv_ocl$(OPENCV_VER).lib;opencv_photo$(OPENCV_VER).lib;opencv_stitching$(OPENCV_VER).lib;opencv_superres$(OPENCV_VER).lib;opencv_video$(OPENCV_VER).lib;opencv_videostab$(OPENCV_VER).lib;opencv_legacy$(OPENCV_VER).lib;opencv_ml$(OPENCV_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 		<ClCompile>
-			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(IncludePath)</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>$(OPENCV_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ClCompile>		
 	</ItemDefinitionGroup>
 	<ItemGroup />
